@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP CALCULATOR</title>
+</head>
+<body>
+     
+    <div id="div1" style="margin: 100px 500px 100px 300px; border: 5px solid brown; border-radius: 15px; background-color: aqua; padding: 30px 30px 30px 30px ;">
+        <div style="border: solid 5px black; margin: 0px 0px 10px 0px;background-color: antiquewhite;">
+        <h1 style="text-align: center;">
+            TIP CALCULATOR
+        </h1>
+         
+        </div>
+        <div style="text-align: center; border: solid 5px rgb(15, 14, 14); background-color: antiquewhite;">
+            <form>
+                 <h5>Bill Amount</h5> 
+                <input id="billrup" type="text" placeholder="enetr the bill rupees"/>
+
+
+                <!-- drop down box for the selecting the tip per -->
+                <h5>Select the the tip</h5>  
+                <select id="service">
+                    <option aria-disabled="false">--not selected--</option>
+                    <option value="0.3">30%(EXCELLENT SERVICE)</option>
+                    <option value="0.2">20%(BEST SERVICE)</option>
+                    <option value="0.1">10%(GOOD SERVICE)</option>
+                    <option value="0.05">5%(POOR SERVICE)</option>
+                </select>
+
+                <!-- number of people box -->
+                <h5>People</h5>
+                <input type="text" id="people" placeholder="enter the  no. of people"/>
+                <br><br>
+            </form>
+
+             <!-- calculate button -->
+             <button id="cal" style="background-color: burlywood; font-family: fantasy; font-size: large;">Calculate!</button>
+             <br>
+
+            <!-- after calculation display -->
+            <div id="totaltip">
+                <h5>RUPEE</h5><span id="tip">0.00</span>
+                <small id="each">EACH</small>
+            </div>
+<br> 
+        </div>
+    </div>
+     
+    <script type="text/javaScript" src="javaScript.js"></script>
+</body>
+</html>
